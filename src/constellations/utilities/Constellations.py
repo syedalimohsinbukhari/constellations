@@ -4,7 +4,7 @@ import astropy.units as u
 import matplotlib.pyplot as plt
 from astropy.coordinates import SkyCoord
 
-from utilities.conversion import hms2dd, dms2dd
+from src.constellations.utilities.conversion import hms2dd, dms2dd
 
 
 def draw_line(coordinates, start_ind, stop_ind, color='cyan'):
