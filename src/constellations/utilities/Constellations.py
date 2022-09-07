@@ -16,7 +16,7 @@ def draw_line(coordinates, start_ind, stop_ind, color='cyan'):
 def constellations(coordinates, star_names, constellation_name, short_name, line_coordinates=None, turn_half=False):
     ra, dec = [hms2dd(i) for i in coordinates[:, 0]], [dms2dd(i) for i in coordinates[:, 1]]
 
-    with open(f'./txt/{short_name.lower()}.txt') as f:
+    with open(f'boundaries/{short_name.lower()}.txt') as f:
         ara = f.readlines()
 
     _ra_bounds = [hms2dd(j) for j in [i.split('|')[0].replace(' ', ':') for i in ara]]
@@ -54,6 +54,6 @@ def constellations(coordinates, star_names, constellation_name, short_name, line
 
     plt.gca().invert_xaxis()
     plt.tight_layout()
-    plt.savefig(rf'./pdfs/{constellation_name.lower()}.pdf')
-    plt.savefig(rf'./pdfs/{constellation_name.lower()}.jpg')
+    plt.savefig(rf'pdfs/{constellation_name.lower()}.pdf')
+    plt.savefig(rf'pdfs/{constellation_name.lower()}.png')
     plt.close()
