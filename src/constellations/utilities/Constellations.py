@@ -55,5 +55,5 @@ def constellations(coordinates, star_names, constellation_name, short_name, line
     plt.gca().invert_xaxis()
     plt.tight_layout()
     plt.savefig(rf'pdfs/{constellation_name.lower()}.pdf')
-    plt.savefig(rf'pdfs/{constellation_name.lower()}.png')
+    plt.savefig(rf'pngs/{constellation_name.lower()}.png')
     plt.close()

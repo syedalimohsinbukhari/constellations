@@ -128,4 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
+/src/constellations/pdfs/
 /src/constellations/pdfs/*
+/src/constellations/pngs/
+/src/constellations/pngs/*
