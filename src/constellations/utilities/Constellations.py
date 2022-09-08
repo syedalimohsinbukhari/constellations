@@ -4,7 +4,7 @@ import astropy.units as u
 import matplotlib.pyplot as plt
 from astropy.coordinates import SkyCoord
 
-from src.constellations.utilities.conversion import hms2dd, dms2dd
+from .conversion import hms2dd, dms2dd
 
 
 def draw_line(coordinates, start_ind, stop_ind, color='cyan'):
@@ -17,18 +17,18 @@ def constellations(coordinates, star_names, constellation_name, short_name, line
     ra, dec = [hms2dd(i) for i in coordinates[:, 0]], [dms2dd(i) for i in coordinates[:, 1]]
 
     with open(f'boundaries/{short_name.lower()}.txt') as f:
-        ara = f.readlines()
+        iau_boundaries = f.readlines()
 
-    _ra_bounds = [hms2dd(j) for j in [i.split('|')[0].replace(' ', ':') for i in ara]]
-    _dec_bounds = [float(i.split('|')[1]) for i in ara]
+    _ra_bounds = [hms2dd(j) for j in [i.split('|')[0].replace(' ', ':') for i in iau_boundaries]]
+    _dec_bounds = [float(i.split('|')[1]) for i in iau_boundaries]
 
     c = SkyCoord(ra=ra * u.deg, dec=dec * u.deg)
 
     if turn_half:
         wrap_at = 180
 
-        c2 = SkyCoord(ra=_ra_bounds * u.deg, dec=_dec_bounds * u.deg)
-        _ra_bounds, _dec_bounds = c2.ra.wrap_at(wrap_at * u.deg).value, [i.value for i in c2.dec]
+        c_boundaries = SkyCoord(ra=_ra_bounds * u.deg, dec=_dec_bounds * u.deg)
+        _ra_bounds, _dec_bounds = c_boundaries.ra.wrap_at(wrap_at * u.deg).value, [i.value for i in c_boundaries.dec]
     else:
         wrap_at = 360
 
