@@ -2,7 +2,7 @@
 
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
+from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta^1', 4: 'delta^2', 5: 'epsilon', 6: 'zeta', 7: 'eta',
               8: 'theta', 9: 'iota', 10: 'kappa', 11: 'mu^1', 12: 'mu^2', 13: 'nu', 14: 'pi'}
