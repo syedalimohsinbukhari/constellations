@@ -22,9 +22,7 @@ andromeda_coordinates = array([('00:08:23.25988', '29:05:25.5520'), ('01:09:43.9
                                ('23:46:02.04703', '46:25:12.9865'), ('01:27:39.38072', '45:24:24.0651')])
 
 draw_lines = [(0, 3), (3, 4), (4, 5), (5, 6), (3, 15), (15, 1), (3, 1), (1, 2), (1, 11), (11, 12),
-              (12, 20),
-              (15, 8), (8, 14), (8, 9), (9, 10)]
+              (12, 20), (15, 8), (8, 14), (8, 9), (9, 10)]
 
-constellations(coordinates=andromeda_coordinates, star_names=star_names,
-               constellation_name='andromeda',
+constellations(coordinates=andromeda_coordinates, star_names=star_names, constellation_name='andromeda',
                short_name='and', line_coordinates=draw_lines, turn_half=True)

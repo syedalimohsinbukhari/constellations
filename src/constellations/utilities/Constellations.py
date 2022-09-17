@@ -4,7 +4,7 @@ import astropy.units as u
 import matplotlib.pyplot as plt
 from astropy.coordinates import SkyCoord
 
-from .conversion import hms2dd, dms2dd
+from .conversion import dms2dd, hms2dd
 
 
 def draw_line(coordinates, start_ind, stop_ind, color='cyan'):
@@ -13,7 +13,9 @@ def draw_line(coordinates, start_ind, stop_ind, color='cyan'):
     plt.plot([start[0], stop[0]], [start[1], stop[1]], color=color)
 
 
-def constellations(coordinates, star_names, constellation_name, short_name, line_coordinates=None, turn_half=False):
+def constellations(coordinates, star_names, constellation_name, short_name, line_coordinates, turn_half=False):
+    constellation_name = constellation_name.replace(' ', '_')
+
     ra, dec = [hms2dd(i) for i in coordinates[:, 0]], [dms2dd(i) for i in coordinates[:, 1]]
 
     with open(f'boundaries/{short_name.lower()}.txt') as f:
@@ -42,7 +44,7 @@ def constellations(coordinates, star_names, constellation_name, short_name, line
     [draw_line([ra, dec], i, j) for i, j in line_coordinates]
     [plt.plot(_ra, _dec, marker='*', ms=20, color='y') for _ra, _dec in zip(ra, dec)]
     [plt.text(i, j, k, horizontalalignment='center', verticalalignment='center') for i, j, k in zip(ra, dec, stars)]
-    plt.title(f'{constellation_name.capitalize()} constellation')
+    plt.title(f"{constellation_name.replace('_', ' ').upper()} constellation")
     plt.xlabel('Right ascension\n[deg]')
     plt.ylabel('Declination\n[deg]')
 
