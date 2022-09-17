@@ -6,7 +6,7 @@ from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta^1', 6: 'zeta^2', 7: 'eta',
               8: 'theta', 9: 'iota', 10: 'kappa', 11: 'lambda', 12: 'mu', 13: 'nu^1', 14: 'nu^2', 15: 'xi',
-              16: 'omicron', 17: 'pi', 18:'rho', 19: 'sigma', 20: 'tau', 21: 'upsilon'}
+              16: 'omicron', 17: 'pi', 18: 'rho', 19: 'sigma', 20: 'tau', 21: 'upsilon'}
 
 corona_borealis_coordinates = array([('15:34:41.26800', '26:42:52.8900'), ('15:27:49.73080', '29:06:20.5300'),
                                      ('15:42:44.56551', '26:17:44.2847'), ('15:49:35.64682', '26:04:06.2065'),
