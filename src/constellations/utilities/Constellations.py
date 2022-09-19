@@ -36,7 +36,8 @@ def constellations(coordinates, star_names, constellation_name, short_name, line
 
     ra, dec = c.ra.wrap_at(wrap_at * u.deg).value, [i.value for i in c.dec]
 
-    stars = [rf'$\{i}$' if 'omicron' not in i else rf"${i.replace('omicron', 'o')}$" for i in star_names.values()]
+    stars = [rf'$\{i}$' if i not in ['omicron', 'P', 'Q']
+             else f'{i}' if i in ['P', 'Q'] else rf"${i.replace('omicron', 'o')}$" for i in star_names.values()]
 
     plt.figure(figsize=(8, 8))
     plt.plot(_ra_bounds, _dec_bounds, 'r:')
