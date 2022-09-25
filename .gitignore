@@ -132,3 +132,4 @@ dmypy.json
 /src/constellations/pdfs/*
 /src/constellations/pngs/
 /src/constellations/pngs/*
+/src/constellations/_test.py
