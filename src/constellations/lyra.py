@@ -1,4 +1,5 @@
 """Created on Oct 03 16:13:48 2022."""
+
 from numpy import array
 
 from utilities.Constellations import constellations
