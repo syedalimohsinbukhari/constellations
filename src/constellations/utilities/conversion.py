@@ -3,13 +3,50 @@
 from numpy import trunc
 
 
-def hms2dd(hms_value):
+def hms2dd(hms_value: str) -> float:
+    """
+    Convert an hour, minute, second value to a decimal degree value.
+
+    Parameters
+    ----------
+    hms_value : str
+        The hour, minute, second value to convert. The value must be in the format "h:m:s", where "h" is the hour value,
+        "m" is the minute value, and "s" is the second value.
+
+    Returns
+    -------
+    float
+        The decimal degree value.
+
+    Examples
+    --------
+    >>> hms2dd("8:45:12")
+    127.75333333333333
+    """
     h, m, s = [float(i) for i in hms_value.split(':')]
+    return h * 15 + m / 4 + s / 240
 
-    return h * 15 + (m / 4) + (s / 240)
 
+def dms2dd(dms_value: str) -> float:
+    """
+    Convert a degree, minute, second value to a decimal degree value.
 
-def dms2dd(dms_value):
+    Parameters
+    ----------
+    dms_value : str
+        The degree, minute, second value to convert. The value must be in the format "d:m:s", where "d" is the degree
+        value, "m" is the minute value, and "s" is the second value.
+
+    Returns
+    -------
+    float
+        The decimal degree value.
+
+    Examples
+    --------
+    >>> dms2dd("30:45:12")
+    30.75333333333333
+    """
     d, m, s = [float(i) for i in dms_value.split(':')]
 
     if d < 0:
@@ -19,6 +56,25 @@ def dms2dd(dms_value):
 
 
 def dd2dms(degree_decimal: float) -> str:
+    """
+    Convert a decimal degree value to an hour, minute, second value.
+
+    Parameters
+    ----------
+    degree_decimal : float
+        The decimal degree value to convert.
+
+    Returns
+    -------
+    str
+        The hour, minute, second value. The value is returned in the format "h:m:s", where "h" is the hour value,
+        "m" is the minute value, and "s" is the second value.
+
+    Examples
+    --------
+    >>> dd2dms(127.75333333333333)
+    '8:45:12'
+    """
     _d = trunc(degree_decimal)
     _deg_residual = abs(degree_decimal - _d)
 

@@ -1,8 +1,11 @@
 """Created on Sep 02 10:35:22 2022."""
 
+from typing import Dict, List, Tuple
+
 import astropy.units as u
 import matplotlib.pyplot as plt
 from astropy.coordinates import SkyCoord
+from numpy import ndarray
 
 from .conversion import dms2dd, hms2dd
 
@@ -13,7 +16,39 @@ def draw_line(coordinates, start_ind, stop_ind, color='cyan'):
     plt.plot([start[0], stop[0]], [start[1], stop[1]], color=color)
 
 
-def constellations(coordinates, star_names, constellation_name, short_name, line_coordinates, turn_half=False):
+def constellations(coordinates: ndarray, star_names: Dict[int, str], constellation_name: str, short_name: str,
+                   line_coordinates: List[Tuple[int, int]], turn_half: bool = False) -> None:
+    """
+    Plot the constellation given the coordinates and the star names.
+
+    Parameters
+    ----------
+    coordinates : ndarray
+        An array of right ascension and declination values for the stars in the constellation.
+        The right ascension values should be in hours, minutes, and seconds, and the declination values should be in
+        degrees, minutes, and seconds. The right ascension and declination values should be separated by a comma.
+    star_names : Dict[int, str]
+        A dictionary mapping the indices of the stars in the coordinates array to their names.
+    constellation_name : str
+        The IAU defined name of the constellation.
+    short_name : str
+        The IAU defined short name of the constellation.
+    line_coordinates : List[Tuple[int, int]]
+        A list of tuples containing the starting and ending indices for the lines connecting the stars in the
+        constellation.
+    turn_half : bool, optional
+        Whether to turn half of the plot to match the conventions of the celestial sphere, by default False.
+
+    Returns
+    ----------
+        None
+
+    Notes
+    ----------
+        The right ascension values will be converted to degrees and the declination values will be left as is.
+        The boundary lines of the constellation are taken from the IAU boundaries file for the given short name.
+        The star chart will be saved as a PDF and a PNG file with the name of the constellation.
+    """
     constellation_name = constellation_name.replace(' ', '_')
 
     ra, dec = [hms2dd(i) for i in coordinates[:, 0]], [dms2dd(i) for i in coordinates[:, 1]]

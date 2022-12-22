@@ -133,3 +133,4 @@ dmypy.json
 /src/constellations/pngs/
 /src/constellations/pngs/*
 /src/constellations/_test.py
+/src/constellations/_old_antlia_script.py
