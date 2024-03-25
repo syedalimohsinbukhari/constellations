@@ -132,5 +132,5 @@ dmypy.json
 /src/constellations/pdfs/*
 /src/constellations/pngs/
 /src/constellations/pngs/*
-/src/constellations/_test.py
-/src/constellations/_old_antlia_script.py
+/Andromeda.pptx
+/Andromeda.mp4
