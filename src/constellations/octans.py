@@ -4,12 +4,6 @@ from numpy import array
 from src.constellations.utilities.Constellations import constellations
 from src.constellations.utilities.others_ import create_star_dictionary
 
-star_names = create_star_dictionary(['alpha', 'beta', 'gamma^1', 'gamma^2', 'gamma^3', 'delta', 'epsilon', 'zeta',
-                                     'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu^1', 'mu^2', 'nu', 'xi',
-                                     'pi^1', 'pi^2', 'rho', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega'])
-
-print(star_names)
-
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma^1', 3: 'gamma^2', 4: 'gamma^3', 5: 'delta', 6: 'epsilon', 7: 'zeta',
               8: 'eta', 9: 'theta', 10: 'iota', 11: 'kappa', 12: 'lambda', 13: 'mu^1', 14: 'mu^2', 15: 'nu', 16: 'xi',
               17: 'pi^1', 18: 'pi^2', 19: 'rho', 20: 'sigma', 21: 'tau', 22: 'upsilon', 23: 'phi', 24: 'chi', 25: 'psi',
