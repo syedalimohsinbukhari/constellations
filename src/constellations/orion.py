@@ -1,5 +1,4 @@
 from numpy import array
-
 from src.constellations.utilities.Constellations import constellations
 from src.constellations.utilities.others_ import get_reverse_map
 
@@ -67,31 +66,6 @@ draw_lines = get_reverse_map(
     [('chi^1', 'chi^2'), ('chi^1', 'nu'), ('chi^2', 'xi'), ('nu', 'mu_B'),
      ('mu_B', 'alpha'), ('alpha', 'lambda')], star_names
 )
-
-# draw_lines = [
-#     (36, 37),
-#     (0, 2),
-#     (0, 17),
-#     (0, 31),
-#     (31, 4),
-#     (4, 3),
-#     (3, 20),
-#     (20, 32),
-#     (31, 16),
-#     (3, 2),
-#     (2, 17),
-#     (17, 0),
-#     (18, 0),
-#     (37, 21),
-#     (36, 20),
-#     (2, 26),
-#     (26, 25),
-#     (26, 27),
-#     (25, 24),
-#     (27, 28),
-#     (28, 29),
-#     (24, 23)
-# ]
 
 constellations(coordinates=orion_coordinates, star_names=star_names, constellation_name='orion',
                short_name='ori', line_coordinates=draw_lines)
