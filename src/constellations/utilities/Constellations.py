@@ -1,5 +1,5 @@
 """Created on Sep 02 10:35:22 2022."""
-
+import string
 from typing import Dict, List, Tuple
 
 import astropy.units as u
@@ -71,8 +71,13 @@ def constellations(coordinates: ndarray, star_names: Dict[int, str], constellati
 
     ra, dec = c.ra.wrap_at(wrap_at * u.deg).value, [i.value for i in c.dec]
 
-    stars = [rf'$\{i}$' if all([j not in i for j in ['omicron', 'P', 'Q']])
-             else f'{i}' if i in ['P', 'Q'] else rf"${i.replace('omicron', 'o')}$" for i in star_names.values()]
+    alphabets = list(string.ascii_lowercase) + list(string.ascii_uppercase)
+
+    stars = [rf'$\{star_name_}$'
+             if all(j != star_name_ for j in alphabets) and star_name_ != 'omicron' else
+             'o' if star_name_ == 'omicron' else
+             f'{star_name_}' if star_name_ in alphabets else 'o'
+             for star_name_ in star_names.values()]
 
     plt.figure(figsize=(8, 8))
     plt.plot(_ra_bounds, _dec_bounds, 'r:')
