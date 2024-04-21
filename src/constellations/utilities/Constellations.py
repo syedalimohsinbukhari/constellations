@@ -75,8 +75,7 @@ def constellations(coordinates: ndarray, star_names: Dict[int, str], constellati
 
     stars = [rf'$\{star_name_}$'
              if all(j != star_name_ for j in alphabets) and star_name_ != 'omicron' else
-             'o' if star_name_ == 'omicron' else
-             f'{star_name_}' if star_name_ in alphabets else 'o'
+             'o' if star_name_ == 'omicron' else f'{star_name_}'
              for star_name_ in star_names.values()]
 
     plt.figure(figsize=(8, 8))
