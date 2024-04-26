@@ -15,7 +15,7 @@ star_names = {0: 'alpha'}
 vulpecula_coordinates = array([('19:28:42.3299', '+24:39:53.661')])
 
 draw_lines = get_reverse_map(
-    [('alpha')], star_names)
+    [('alpha','alpha')], star_names)
 
 constellations(coordinates=vulpecula_coordinates, star_names=star_names, constellation_name='vulpecula',
                short_name='vul', line_coordinates=draw_lines,turn_half=True)
