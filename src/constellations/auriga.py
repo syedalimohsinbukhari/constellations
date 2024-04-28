@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'delta', 3: 'epsilon', 4: 'zeta', 5: 'eta', 6: 'theta', 7: 'iota', 8: 'kappa',
-              9: 'lambda', 10: 'mu', 11: 'nu', 12: 'xi', 13: 'omicron', 14: 'pi', 15: 'rho', 16: 'sigma', 17: 'tau',
+              9: 'lambda', 10: 'mu', 11: 'nu', 12: 'xi', 13: 'o', 14: 'pi', 15: 'rho', 16: 'sigma', 17: 'tau',
               18: 'upsilon', 19: 'phi', 20: 'chi', 21: 'psi^1', 22: 'psi^2', 23: 'psi^3', 24: 'psi^4', 25: 'psi^5',
               26: 'psi^6', 27: 'psi^7', 28: 'psi^8', 29: 'psi^9', 30: 'omega'}
 

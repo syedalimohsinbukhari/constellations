@@ -1,9 +1,9 @@
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
+from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'omicron1', 15: 'omicron2', 16: 'rho',
+              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'o1', 15: 'o2', 16: 'rho',
               17: 'sigma', 18: 'tau', 19: 'upsilon', 20: 'phi', 21: 'chi', 22: 'psi', 23: 'omega'}
 
 ophiuchus_coordinates = array([('17:34:56.06945', '+12:33:36.1346'), ('17:43:28.35265', '+04:34:02.2955'),

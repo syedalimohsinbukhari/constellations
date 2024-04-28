@@ -1,7 +1,7 @@
 """Created on Mar 25 23:52:38 2024."""
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
+from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma^1', 3: 'gamma^2', 4: 'gamma^3', 5: 'delta', 6: 'epsilon', 7: 'zeta',
               8: 'eta', 9: 'theta', 10: 'iota', 11: 'kappa', 12: 'lambda', 13: 'mu^1', 14: 'mu^2', 15: 'nu', 16: 'xi',

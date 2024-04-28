@@ -6,7 +6,7 @@ from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta^1', 4: 'delta^2', 5: 'epsilon', 6: 'zeta', 7: 'eta',
               8: 'theta', 9: 'iota', 10: 'kappa', 11: 'lambda', 12: 'mu^1', 13: 'mu^2', 14: 'nu', 15: 'xi',
-              16: 'omicron', 17: 'pi^1', 18: 'pi^2', 19: 'rho', 20: 'sigma^1', 21: 'sigma^2', 22: 'tau^1',
+              16: 'o', 17: 'pi^1', 18: 'pi^2', 19: 'rho', 20: 'sigma^1', 21: 'sigma^2', 22: 'tau^1',
               23: 'tau^2', 24: 'tau^3', 25: 'upsilon', 26: 'phi'}
 
 grus_coordinates = array([('22:08:13.98473', '-46:57:39.5078'), ('22:42:40.05027', '-46:53:04.4752'),

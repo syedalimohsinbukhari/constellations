@@ -4,7 +4,7 @@ from numpy import array
 
 from utilities.Constellations import constellations
 
-star_names = {0: 'alpha', 1: 'beta_\mathrm{A, B, C}', 2: 'gamma', 3: 'delta', 4: 'epsilon_\mathrm{A, B}', 5: 'zeta'}
+star_names = {0: 'alpha', 1: 'beta_A', 2: 'gamma', 3: 'delta', 4: 'epsilon_A', 5: 'zeta'}
 
 monoceros_coordinates = array([('07:41:14.83300', '-09:33:04.0700'), ('06:28:49.07000', '-07:01:59.0250'),
                                ('06:14:51.33367', '-06:16:29.1880'), ('07:11:51.86000', '-00:29:33.9600'),

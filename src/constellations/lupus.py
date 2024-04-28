@@ -6,7 +6,7 @@ from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
               9: 'kappa^1', 10: 'kappa^2', 11: 'lambda', 12: 'mu', 13: 'nu^1', 14: 'nu^2', 15: 'xi^1', 16: 'xi^2',
-              17: 'omicron', 18: 'pi', 19: 'rho', 20: 'sigma', 21: 'tau^1', 22: 'tau^2', 23: 'upsilon', 24: 'phi^1',
+              17: 'o', 18: 'pi', 19: 'rho', 20: 'sigma', 21: 'tau^1', 22: 'tau^2', 23: 'upsilon', 24: 'phi^1',
               25: 'phi^2', 26: 'chi', 27: 'psi^1', 28: 'psi^2', 29: 'omega'}
 
 lupus_coordinates = array([('14:41:55.75579', '-47:23:17.5155'), ('14:58:31.92536', '-43:08:02.2699'),

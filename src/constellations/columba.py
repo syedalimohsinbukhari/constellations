@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'eta', 6: 'theta', 7: 'kappa',
-              8: 'lambda', 9: 'mu', 10: 'nu^1', 11: 'nu^2', 12: 'xi', 13: 'omicron', 14: 'pi^1', 15: 'pi^2',
+              8: 'lambda', 9: 'mu', 10: 'nu^1', 11: 'nu^2', 12: 'xi', 13: 'o', 14: 'pi^1', 15: 'pi^2',
               16: 'sigma'}
 
 columba_coordinates = array([('05:39:38.94103', '-34:04:26.7950'), ('05:50:57.59290', '-35:46:05.9152'),

@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa^2', 10: 'mu', 11: 'nu', 12: 'omicron', 13: 'pi', 14: 'rho'}
+              9: 'kappa^2', 10: 'mu', 11: 'nu', 12: 'o', 13: 'pi', 14: 'rho'}
 
 indus_coordinates = array([('20:37:34.03201', '-47:17:29.4026'), ('20:54:48.60278', '-58:27:14.9618'),
                            ('21:26:15.43919', '-54:39:37.6515'), ('21:57:55.07353', '-54:59:33.2740'),

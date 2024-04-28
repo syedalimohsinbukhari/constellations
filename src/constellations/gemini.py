@@ -6,7 +6,7 @@ from utilities.Constellations import constellations
 
 star_names = {0: 'alpha_A', 1: 'alpha_B', 2: 'alpha_C', 3: 'beta', 4: 'gamma', 5: 'delta', 6: 'epsilon', 7: 'zeta',
               8: 'eta^A', 9: 'eta_B', 10: 'theta', 11: 'iota', 12: 'kappa', 13: 'lambda', 14: 'mu', 15: 'nu', 16: 'xi',
-              17: 'omicron', 18: 'pi', 19: 'rho^A', 20: 'rho_B', 21: 'rho_C', 22: 'sigma', 23: 'tau', 24: 'upsilon',
+              17: 'o', 18: 'pi', 19: 'rho^A', 20: 'rho_B', 21: 'rho_C', 22: 'sigma', 23: 'tau', 24: 'upsilon',
               25: 'phi', 26: 'chi', 27: 'omega'}
 
 gemini_coordinates = array([('07:34:35.86300', '31:53:17.7900'), ('07:34:36.10000', '31:53:18.5700'),

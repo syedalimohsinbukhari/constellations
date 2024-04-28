@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta^1', 6: 'zeta^2', 7: 'eta',
-              8: 'theta', 9: 'iota^1', 10: 'iota^2', 11: 'lambda', 12: 'mu', 13: 'lambda\mathrm{ Cha}'}
+              8: 'theta', 9: 'iota^1', 10: 'iota^2', 11: 'lambda', 12: 'mu', 13: 'lambda_{Cha}'}
 
 musca_coordinates = array([('12:37:11.01789', '-69:08:08.0332'), ('12:46:16.80410', '-68:06:29.2164'),
                            ('12:32:28.01343', '-72:07:58.7597'), ('13:02:16.26474', '-71:32:55.8752'),

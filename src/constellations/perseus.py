@@ -2,17 +2,11 @@
 
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
-from src.constellations.utilities.others_ import get_reverse_map
-
-# star_names = create_star_dictionary(['alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta',
-#                                      'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'o', 'pi',
-#                                      'rho', 'sigma', 'tau', 'phi', 'psi', 'omega', 'b'])
-#
-# print(star_names)
+from utilities.Constellations import constellations
+from utilities.others_ import get_reverse_map
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'omicron', 15: 'pi', 16: 'rho', 17: 'sigma',
+              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'o', 15: 'pi', 16: 'rho', 17: 'sigma',
               18: 'tau', 19: 'phi', 20: 'psi', 21: 'omega', 22: 'b'}
 
 perseus_coordinates = array([('03:24:19.37009', '49:51:40.24550'), ('03:08:10.13245', '40:57:20.32800'),
@@ -31,7 +25,7 @@ perseus_coordinates = array([('03:24:19.37009', '49:51:40.24550'), ('03:08:10.13
 draw_lines = get_reverse_map([('alpha', 'gamma'), ('alpha', 'iota'), ('iota', 'theta'), ('theta', 'phi'),
                               ('alpha', 'delta'), ('gamma', 'eta'), ('gamma', 'tau'), ('eta', 'tau'), ('tau', 'iota'),
                               ('delta', 'mu'), ('mu', 'lambda'), ('delta', 'epsilon'), ('epsilon', 'beta'),
-                              ('epsilon', 'xi'), ('xi', 'zeta'), ('zeta', 'omicron'), ('beta', 'rho'),
+                              ('epsilon', 'xi'), ('xi', 'zeta'), ('zeta', 'o'), ('beta', 'rho'),
                               ('beta', 'kappa'), ('kappa', 'iota')], star_names)
 
 constellations(coordinates=perseus_coordinates, star_names=star_names, constellation_name='perseus',

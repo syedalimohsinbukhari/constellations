@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'omicron', 15: 'pi', 16: 'rho^1', 17: 'rho^2',
+              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'o', 15: 'pi', 16: 'rho^1', 17: 'rho^2',
               18: 'rho^3', 19: 'sigma', 20: 'tau^1', 21: 'tau^2'}
 
 aries_coordinates = array([('02:07:10.40570', '23:27:44.7032'), ('01:54:38.41099', '20:48:28.9133'),
