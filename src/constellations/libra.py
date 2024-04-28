@@ -6,7 +6,7 @@ from utilities.Constellations import constellations
 
 star_names = {0: 'alpha^1', 1: 'alpha^2', 2: 'beta', 3: 'gamma', 4: 'delta', 5: 'eta', 6: 'zeta^1',
               7: 'zeta^3', 8: 'zeta^4', 9: 'eta', 10: 'theta', 11: 'iota^1', 12: 'iota^2', 13: 'kappa', 14: 'lambda',
-              15: 'mu', 16: 'nu', 17: 'xi^1', 18: 'xi^2', 19: 'omicron', 20: 'sigma', 21: 'tau', 22: 'upsilon'}
+              15: 'mu', 16: 'nu', 17: 'xi^1', 18: 'xi^2', 19: 'o', 20: 'sigma', 21: 'tau', 22: 'upsilon'}
 
 libra_coordinates = array([('14:50:41.18097', '-15:59:50.0482'), ('14:50:52.71309', '-16:02:30.3955'),
                            ('15:17:00.41382', '-09:22:58.4919'), ('15:35:31.57881', '-14:47:22.3278'),

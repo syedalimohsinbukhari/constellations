@@ -2,8 +2,8 @@
 
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
-from src.constellations.utilities.others_ import get_reverse_map
+from utilities.Constellations import constellations
+from utilities.others_ import get_reverse_map
 
 star_names = {0: 'zeta', 1: 'nu', 2: 'xi', 3: 'o', 4: 'pi', 5: 'rho', 6: 'sigma', 7: 'tau', 8: 'upsilon^1',
               9: 'upsilon^2', 10: 'chi', 11: 'l_2'}

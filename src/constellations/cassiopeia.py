@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'omicron', 15: 'pi', 16: 'rho', 17: 'sigma',
+              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'o', 15: 'pi', 16: 'rho', 17: 'sigma',
               18: 'tau', 19: 'upsilon^1', 20: 'upsilon^2', 21: 'phi', 22: 'chi', 23: 'psi', 24: 'omega'}
 
 cassiopeia_coordinates = array([('00:40:30.44110', '56:32:14.3920'), ('00:09:10.68518', '59:08:59.2120'),

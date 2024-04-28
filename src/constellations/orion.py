@@ -1,12 +1,12 @@
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
-from src.constellations.utilities.others_ import get_reverse_map
+from utilities.Constellations import constellations
+from utilities.others_ import get_reverse_map
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta^1_A',
               8: 'theta^1_B', 9: 'theta^1_C', 10: 'theta^1_D', 11: 'theta^1_E', 12: 'theta^1_F', 13: 'theta^1_G',
               14: 'theta^2', 15: 'iota', 16: 'kappa', 17: 'lambda', 18: 'mu_A', 19: 'mu_B', 20: 'nu', 21: 'xi',
-              22: 'omicron^1', 23: 'omicron^2', 24: 'pi^1', 25: 'pi^2', 26: 'pi^3', 27: 'pi^4', 28: 'pi^5',
+              22: 'o^1', 23: 'o^2', 24: 'pi^1', 25: 'pi^2', 26: 'pi^3', 27: 'pi^4', 28: 'pi^5',
               29: 'pi^6', 30: 'rho', 31: 'sigma', 32: 'tau', 33: 'upsilon', 34: 'phi^1', 35: 'phi^2', 36: 'chi^1',
               37: 'chi^2', 38: 'psi^1', 39: 'psi^2', 40: 'omega'}
 

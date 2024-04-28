@@ -1,10 +1,10 @@
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
-from src.constellations.utilities.others_ import get_reverse_map
+from utilities.Constellations import constellations
+from utilities.others_ import get_reverse_map
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'omicron', 15: 'pi^1', 16: 'pi^2', 17: 'rho',
+              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'o', 15: 'pi^1', 16: 'pi^2', 17: 'rho',
               18: 'sigma', 19: 'tau', 20: 'upsilon', 21: 'phi', 22: 'chi', 23: 'psi'}
 
 pavo_coordinates = array([('23:04:45.65345', '+15:12:18.9617'), ('23:03:46.45746', '+28:04:58.0336'),

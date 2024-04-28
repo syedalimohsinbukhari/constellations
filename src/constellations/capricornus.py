@@ -6,7 +6,7 @@ from utilities.Constellations import constellations
 
 star_names = {0: 'alpha^1', 1: 'alpha^2', 2: 'beta', 3: 'gamma', 4: 'delta', 5: 'epsilon', 6: 'zeta', 7: 'eta',
               8: 'theta', 9: 'iota', 10: 'kappa', 11: 'lambda', 12: 'mu', 13: 'nu', 14: 'xi^1', 15: 'xi^2',
-              16: 'omicron^1', 17: 'omicron^2', 18: 'pi', 19: 'rho', 20: 'sigma', 21: 'tau^1', 22: 'tau^2',
+              16: 'o^1', 17: 'o^2', 18: 'pi', 19: 'rho', 20: 'sigma', 21: 'tau^1', 22: 'tau^2',
               23: 'upsilon', 24: 'phi', 25: 'chi', 26: 'psi', 27: 'omega'}
 
 capricornus_coordinates = array([('20:17:38.86910', '-12:30:29.5716'), ('20:18:03.25595', '-12:32:41.4684'),

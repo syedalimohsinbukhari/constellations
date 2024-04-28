@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha_{A, B}', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta',
-              8: 'iota', 9: 'kappa_{A, B}', 10: 'lambda', 11: 'mu_{A, B}', 12: 'nu', 13: 'xi', 14: 'omicron', 15: 'pi',
+              8: 'iota', 9: 'kappa_{A, B}', 10: 'lambda', 11: 'mu_{A, B}', 12: 'nu', 13: 'xi', 14: 'o', 15: 'pi',
               16: 'rho_{A, B}', 17: 'sigma', 18: 'tau', 19: 'upsilon', 20: 'phi', 21: 'chi', 22: 'omega'}
 
 hercules_coordinates = array([('17:14:38.85300', '14:23:25.0000'), ('16:30:13.19955', '21:29:22.6008'),

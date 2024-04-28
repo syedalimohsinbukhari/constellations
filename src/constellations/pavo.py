@@ -1,10 +1,10 @@
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
-from src.constellations.utilities.others_ import get_reverse_map
+from utilities.Constellations import constellations
+from utilities.others_ import get_reverse_map
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu^1', 12: 'mu^2', 13: 'nu', 14: 'xi', 15: 'omicron', 16: 'pi', 17: 'rho',
+              9: 'kappa', 10: 'lambda', 11: 'mu^1', 12: 'mu^2', 13: 'nu', 14: 'xi', 15: 'o', 16: 'pi', 17: 'rho',
               18: 'sigma', 19: 'tau', 20: 'upsilon', 21: 'phi^1', 22: 'phi^2', 23: 'omega'}
 
 # iota and some other stars do not directly mentioned RA and DEC directly.

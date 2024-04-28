@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu^1', 13: 'nu^2', 14: 'xi', 15: 'omicron', 16: 'pi', 17: 'rho',
+              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu^1', 13: 'nu^2', 14: 'xi', 15: 'o', 16: 'pi', 17: 'rho',
               18: 'sigma', 19: 'tau', 20: 'upsilon', 21: 'phi', 22: 'chi', 23: 'psi', 24: 'omega'}
 
 bootes_coordinates = array([('14:15:39.70000', '19:10:56.0000'), ('15:01:56.76238', '40:23:26.0406'),

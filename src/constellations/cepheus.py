@@ -5,7 +5,7 @@ from numpy import array
 from utilities.Constellations import constellations
 
 star_names = {0: 'alpha', 1: 'beta', 2: 'gamma', 3: 'delta', 4: 'epsilon', 5: 'zeta', 6: 'eta', 7: 'theta', 8: 'iota',
-              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'omicron^1', 15: 'omicron^2', 16: 'pi',
+              9: 'kappa', 10: 'lambda', 11: 'mu', 12: 'nu', 13: 'xi', 14: 'o^1', 15: 'o^2', 16: 'pi',
               17: 'rho^1', 18: 'rho^2'}
 
 cepheus_coordinates = array([('21:18:34.77150', '62:35:08.0610'), ('21:28:39.59685', '70:33:38.5747'),
@@ -19,7 +19,7 @@ cepheus_coordinates = array([('21:18:34.77150', '62:35:08.0610'), ('21:28:39.596
                              ('23:07:53.85400', '75:23:15.0000'), ('22:26:42.40624', '78:47:09.0725'),
                              ('22:29:52.97918', '78:49:27.4282')])
 
-# omicron 1 dec issue
+# o 1 dec issue
 
 draw_lines = [(0, 6), (6, 7), (0, 1), (1, 2), (2, 8), (1, 8), (8, 3), (3, 5), (5, 4), (4, 11), (11, 0)]
 

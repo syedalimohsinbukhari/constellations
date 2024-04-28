@@ -2,12 +2,11 @@
 
 from numpy import array
 
-from src.constellations.utilities.Constellations import constellations
+from utilities.Constellations import constellations
 
 star_names = {0: 'alpha^A', 1: 'alpha_B', 2: 'alpha_C', 3: 'beta', 4: 'gamma', 5: 'delta', 6: 'epsilon', 7: 'zeta',
-              8: 'eta',
-              9: 'theta', 10: 'iota', 11: 'kappa', 12: 'lambda', 13: 'mu', 14: 'nu', 15: 'xi^1', 16: 'xi^2',
-              17: 'omicron^1', 18: 'omicron^2', 19: 'pi', 20: 'rho', 21: 'sigma', 22: 'tau', 23: 'upsilon^1',
+              8: 'eta', 9: 'theta', 10: 'iota', 11: 'kappa', 12: 'lambda', 13: 'mu', 14: 'nu', 15: 'xi^1', 16: 'xi^2',
+              17: 'o^1', 18: 'o^2', 19: 'pi', 20: 'rho', 21: 'sigma', 22: 'tau', 23: 'upsilon^1',
               24: 'upsilon^2', 25: 'phi', 26: 'chi', 27: 'psi'}
 
 centaurus_coordinates = array([('14:39:36.49400', '-60:50:02.3737'), ('14:39:35.06310', '-60:50:14.0992'),
